@@ -1,0 +1,558 @@
+.header-nav,
+.banner-actions,
+.recommendation,
+.carousel-container,
+.ready,
+.examples,
+.rec-list 
+.buttons
+.featured-house
+{
+    margin-left: 8%; /* Відступ від лівого краю */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    margin-left: 0;
+}
+
+.back-ground {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 55%; /* Розтягнути зображення на всю ширину екрану */
+    height: 100%; /* Розтягнути зображення на всю висоту екрану */
+    z-index: -1; /* Позначте зображення заднього фону як зазначене */
+}
+
+.banner {
+    position: relative;
+    background-size: cover;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Змінено на column */
+    padding-bottom: 3rem;
+    margin-left: 8%;
+}
+
+.banner-header {
+    width: 496px;
+    height: 150px;
+    font-family: 'Lexend', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #1B1C57;
+    position: relative;
+    margin-bottom: 0px; /* Зменшена відстань */
+    margin-left: -10px; /* Зближення тексту зліва */
+}
+
+.banner-text {
+    text-align: left;
+    width: 496px;
+    height: 56px;
+    opacity: 0.75;
+    font-family: 'Lexend', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0;
+    color: #505374;
+    margin-bottom: 0px; /* Зменшена відстань */
+    margin-left: -10px; /* Зближення тексту зліва */
+}
+
+.banner-header span {
+    font-weight: 700;
+    color: #fff;
+    text-shadow: -1px -1px 0 #191b7b, 1px -1px 0 #070852, -1px 1px 0 #080cd0, 1px 1px 0 #0c0d5c;
+}
+
+
+.house1-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 0 0 0 80px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding-bottom: 4rem;
+}
+
+.nav-logo span {
+    width: 67px;
+    height: 20px;
+    top: 55px;
+    font-family: 'Lexend', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-align: left;
+    margin: 10px;
+    padding-bottom: 4rem;
+}
+
+.nav-logo img {
+    width: 36px;
+    height: 36px;
+    top: 45px;
+    left: 8%;
+    border-radius: 4px 4px 24px 4px;
+    padding-bottom: 4rem;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+button,
+select {
+    background-color: #8ac097c8;
+    color: #04090586;
+    margin: 0 10px;
+    height: 34px;
+    padding: 8px 16px;
+    border-radius: 32px;
+    border: 1px solid #0404041b;
+    gap: 10px;
+    cursor: pointer;
+}
+
+button {
+    width: 96px;
+}
+
+select {
+    width: 122px;
+}
+
+button.sing_up_btn {
+    margin: 0 50px;
+    width: 107px;
+    height: 46px;
+    padding: 12px 24px;
+    gap: 10px;
+    cursor: pointer;
+    background-color: #d1fae5;
+    color: #047857;
+    transition: background 0.3s ease;
+}
+
+button.sign-up-btn:hover {
+    background-color: #10B981;
+    color: white;
+}
+
+select.property-option {
+    background-color: #971f1f1a;
+    color: #503a3a;
+}
+
+/* Додаткові стилі для кнопок */
+.header-link {
+    background-color: #8ac097c8;
+    color: #04090586;
+    margin: 0 10px;
+    height: 34px;
+    padding: 8px 16px;
+    border-radius: 32px;
+    border: 1px solid #0404041b;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.header-link:hover {
+    background-color: #971f1f1a;
+    color: #503a3a;
+}
+
+body {
+    font-family: 'Lexend', sans-serif;
+}
+
+header, button, select {
+    font-family: 'Lexend', sans-serif;
+}
+
+.main {
+    position: relative;
+    font-family: 'Lexend', sans-serif;
+}
+
+.banner-search {
+    width: 496px;
+    height: fit-content;
+    padding: 4px 4px 4px 24px;
+    border-radius: 32px;
+    border: 1px solid #E0E3EB;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-left: 8%; /* Додано */
+    margin-top: -20%; /* Підсунути вгору */
+}
+
+#banner-search {
+    flex: 1;
+    font-family: 'Lexend', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0;
+    text-align: left;
+    border: none;
+    padding: 10px;
+    border-radius: 0;
+}
+
+.banner-search-btn {
+    background-color: #10B981;
+    width: 109px;
+    height: 48px;
+    padding: 12px 16px;
+    border-radius: 32px;
+    gap: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.banner-search-btn:hover {
+    background-color: #d1fae5;
+    color: #047857;
+}
+
+.text-sponsors {
+    width: 120px;
+    height: 32px;
+    font-family: 'Lexend', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #888B97;
+    margin-top: 12px; /* Підсунути вгору */
+    white-space: nowrap;
+    position: relative;
+    z-index: 2;
+}
+
+/* Зображення спонсорів */
+.banner-actions {
+    display: flex;
+    justify-content: flex-start; /* Розміщення в лівій половині */
+    align-items: center;
+    margin-top: 0; /* Змінено */
+    margin-left: 0; /* Додано */
+}
+.sponsor-img {
+    height: 30px; /* Фіксована висота для узгодженості */
+    width: auto; /* Автоматична ширина */
+    margin-right: 10px; /* Відстань між зображеннями спонсорів */
+    margin-bottom: 10px; /* Відстань між рядками зображень */
+}
+
+.recommendation{
+    margin-top: 18%;
+    display: flex;
+    align-items: center;
+}
+
+.orange-line {
+    margin-left: 8%;
+    width: 32px;
+    height: 1px;
+    margin-bottom: 6%;
+}
+
+.recommendation-header{
+    margin-left: 1%;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #F59E0B;
+    margin-bottom: 7%;
+}
+
+.recommendation-text {
+    margin-top: 2%;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0;
+    text-align: left;
+    margin-left: -10%;
+    white-space: nowrap;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: flex-end; /* Розміщення каруселі справа */
+    overflow-x: auto; /* Горизонтальна прокрутка */
+    max-width: 100%; /* Максимальна ширина */
+    margin-top: 20px; /* Опустити карусель вниз */
+    margin-right: 20px; /* Зсунути карусель вліво */
+}
+
+.carousel {
+    display: flex;
+    flex-direction: row; /* Напрямок рядка */
+    align-items: flex-start; /* Вирівнювання зверху */
+    justify-content: flex-end; /* Розміщення каруселі справа */
+    overflow-x: auto; /* Горизонтальна прокрутка */
+    max-width: 100%; /* Максимальна ширина */
+}
+
+.carousel-item {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; /* Відстань між елементами */
+    background-color: #FFFFFF; /* Колір фону карусельних елементів */
+    border-radius: 10px; /* Закруглення кутів */
+    padding: 10px; /* Відступи всередині елементу */
+    height: 100px;
+}
+
+.carousel-item img {
+    width: 120px;
+    height: auto;
+}
+
+.carousel-item p {
+    margin-left: 10px;
+}
+
+.recomendation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 20px;
+}
+
+.recomendation-text {
+    display: flex;
+    font-family: 'Lexend', sans-serif;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.featured-house {
+    margin-right: 10px;
+    font-family: 'Lexend', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+}
+
+.examples {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    margin-bottom: 10px;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.rec-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+    height: 300px;
+    width: 200px;
+}
+
+.rec-list img {
+    width: 50px; /* Збільшено розмір зображення */
+    height: auto;
+    border-radius: 5px;
+}
+
+.rec-list p {
+    margin: 5px 0;
+    font-size: 14px; /* Зменшено розмір тексту */
+    text-align: center;
+}
+
+/* Збільшити розмір першого зображення в блоках .rec-list */
+.rec-list img:first-child {
+    width: 250px;
+    height: auto;
+}
+
+.ready {
+    display: flex;
+    justify-content: space-between; /* Розміщення контенту по краях */
+    align-items: center; /* Вирівнювання контенту по вертикалі */
+    flex-direction: row-reverse; /* Зміна порядку розташування елементів */
+}
+
+.video {
+    width: 45%; /* Розмір відео - 45% контейнера */
+}
+
+.info {
+    width: 50%; /* Розмір інформації - половина контейнера */
+    margin-right: 20px; /* Відступ від правого краю */
+}
+
+.tour {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding-left: 20px; /* Змінено відступ зліва за допомогою padding */
+    color: #1B1C57;
+}
+
+.tour-inf {
+    margin-bottom: 20px;
+    font-family: 'Lexend', sans-serif;
+    color: #505374; /* Додано колір тексту */
+}
+
+.icon-texts {
+    margin-bottom: 20px;
+}
+
+.icon-text {
+    margin-right: 20px;
+}
+
+.user-icon {
+    width: 50px; /* Збільшено розмір зображення */
+    height: auto;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.user-name {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    font-family: 'Lexend', sans-serif;
+    font-size: 16px; /* Змінено розмір тексту */
+    font-weight: 500; /* Змінено жирність */
+    color: #1B1C57; /* Додано колір тексту */
+}
+
+.contact-button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #8ac097c8;
+    color: #04090586;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+    margin-right: 20px;
+}
+
+.contact-button:hover {
+    background-color: #10B981;
+    color: #FFF;
+}
+
+.feedback {
+    width: 80%; /* Ширина секції */
+    margin: 0 auto; /* Центрування секції по горизонталі */
+    overflow: hidden; /* Заборона переповнення контентом */
+}
+
+.text-feedback {
+    text-align: center; /* Вирівнювання тексту заголовка по центру */
+    margin-bottom: 20px; /* Відстань між заголовком і каруселлю */
+}
+
+.house-fed {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.house-fed::-webkit-scrollbar {
+    display: none; /* Приховання полоси прокрутки на WebKit браузерах */
+}
+
+.house-fed > * {
+    flex: 0 0 auto; /* Заборона зміни розміру елементів каруселі */
+    margin-right: 20px; /* Відстань між елементами каруселі */
+    scroll-snap-align: start; /* Вирівнювання елементів каруселі по лівому краю */
+}
+
+.house-foto {
+    width: 100px; /* Розмір зображення користувача */
+}
+
+.user-fed {
+    display: flex;
+    flex-direction: column; /* Встановлення вертикального напрямку для блоку з інформацією користувача */
+}
+
+.comment {
+    margin-bottom: 10px; /* Відстань між коментарем і зображенням користувача */
+}
+
+.user-icon {
+    width: 50px; /* Розмір зображення користувача */
+    border-radius: 50%; /* Закругленість країв зображення */
+    margin-bottom: 10px; /* Відстань між зображенням користувача і ім'ям */
+}
+
+.user-name {
+    margin-bottom: 10px; /* Відстань між ім'ям і кнопкою */
+}
+
+.contact-button {
+    padding: 8px 20px; /* Розмір кнопки */
+    border-radius: 20px; /* Закругленість країв кнопки */
+    background-color: #8ac097c8; /* Колір фону кнопки */
+    color: #04090586; /* Колір тексту кнопки */
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #10B981; /* Колір фону кнопки при наведенні */
+    color: #FFF; /* Колір тексту кнопки при наведенні */
+}
