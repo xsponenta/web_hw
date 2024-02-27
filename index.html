@@ -3,10 +3,14 @@
 	<head>
     	<meta charset="UTF-8">
     	<meta name="viewport" content="width=device-width">
-    	<title>Houter</title>
+        <link rel="stylesheet" href="style.css">
+    	<title class= "houter-text">Houter</title>
+        
 	</head>
 	<body>
     	<header>
+            <img class="back-ground" src="./icons/green-gradient.svg" />
+            <img class="house1-img" src="./icons/house1.png" alt="House" />
       		<img class="nav-logo" src="./icons/logo.svg" alt="Logotype" />
       		<nav>
         	<a class="header-link" href="#">About Us</a>
@@ -20,63 +24,40 @@
     	</header>
 
     	<main class="main">
-      		<section class="banner">
-        		<h1 class="banner-header">
-            		Find The Place To Live Your Dreams!
-        		</h1>
+            <section class="banner">
+                <h1 class="banner-header">
+                    Find The Place To Live Your Dreams!
+                </h1>
                 <p class="banner-text">
-                	Everything you need about finding your place to live will be here,
-            where it will be easier for you.
-            	</p>
-            	<section class="promotion-header">
-                	<img width=526 src="./icons/house1.png" alt="House"/>
-                    <section class="promotion">
-                    	<div class="promo">
-                        	<p class="text-people">
-                        		1K+ people
-                       		</p>
-                            <img width=120 src="./icons/house2.png" alt="House"/>
-                            <p class="text-building">
-                        		56 Houses
-                       		</p>
-                            <img width=120 src="./icons/house3.png" alt="House"/>
-                        </div>
-                    </section>
-             	</section>
-                <section class="header-search">
-            		<input type="text" id="banner-search" name="banner-search">
-                		Search for the location you want!
-            		</input>
-            		<button class="banner-search-btn">Search</button>
-        		</section>
-                <section class="sponsors"></section>   
-                    <aside class="banner-actions">
-                        <img
-                        height=30
-                        class="sponsor-img"
-                        src="./icons/traveloka.png"
-                        alt="Traveloka"
-                        />
-                        <img
-                        height=30
-                        class="sponsor-img"
-                        src="./icons/tiketcom.png"
-                        alt="Tiket.com"
-                        />
-                        <img
-                        height=30
-                        class="sponsor-img"
-                        src="./icons/airbnb.png"
-                        alt="Airbnb"
-                        />
-                        <img
-                        height=30
-                        class="sponsor-img"
-                        src="./icons/tripadvisor.png"
-                        alt="Tripadvisor"
-                        />
-                    </aside>
+                    Everything you need about finding your place to live will be here,
+                    where it will be easier for you.
+                </p>
+                <section class="carousel">
+                    <div class="carousel-item">
+                        <img src="icons/house2.png" alt="Image 1">
+                        <p>1K+ people</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="icons/house3.png" alt="Image 2">
+                        <p>56 Houses</p>
+                    </div>
                 </section>
+                <section class="header-search">
+                    <input type="text" id="banner-search" name="banner-search" placeholder="Search for the location you want!">
+                    <button class="banner-search-btn">Search</button>
+                </section>
+                <section class="sponsors">
+                    <p class="text-sponsors">Our Partnership</p>
+                </section>
+                <aside class="banner-actions">
+                    <img height="30" class="sponsor-img" src="./icons/traveloka.png" alt="Traveloka" />
+                    <img height="30" class="sponsor-img" src="./icons/tiketcom.png" alt="Tiket.com" />
+                    <img height="30" class="sponsor-img" src="./icons/airbnb.png" alt="Airbnb" />
+                    <img height="30" class="sponsor-img" src="./icons/tripadvisor.png" alt="Tripadvisor" />
+                </aside>
+                
+            </section>
+            
                 <section class="recomendation">
                     <section class="recomendation-text">
                         <h2 class="featured-house">
@@ -98,6 +79,28 @@
                             <p class="house-price"> $14.881.488 </p>
                             <p class="user-name"> Criss </p>
                         </div>
+                        <div class="rec-list">
+                            <img class="house-img" width=180 src="./icons/house.png" alt="House"/>
+                            <p class="hose-name">Roselands House</p>
+                            <img class="user-icon" width=50 src="./icons/house2.png" alt="User"/>
+                            <p class="house-price"> $14.881.488 </p>
+                            <p class="user-name"> Criss </p>
+                        </div>
+                        <div class="rec-list">
+                            <img class="house-img" width=180 src="./icons/house.png" alt="House"/>
+                            <p class="hose-name">Roselands House</p>
+                            <img class="user-icon" width=50 src="./icons/house2.png" alt="User"/>
+                            <p class="house-price"> $14.881.488 </p>
+                            <p class="user-name"> Criss </p>
+                        </div>
+                        <div class="rec-list">
+                            <img class="house-img" width=180 src="./icons/house.png" alt="House"/>
+                            <p class="hose-name">Roselands House</p>
+                            <img class="user-icon" width=50 src="./icons/house2.png" alt="User"/>
+                            <p class="house-price"> $14.881.488 </p>
+                            <p class="user-name"> Criss </p>
+                        </div>
+                        
                     </section>
                 </section>
                 <section class="ready">
@@ -118,7 +121,7 @@
                             <p class="icon-text">2 floors</p>
                         </aside>
                         <img class="user-icon" width=80 src="./icons/house2.png" alt="User"/>
-                        <p class="user-name"> user name </p>
+                        <p class="user-name"> Criss </p>
                         <button class="contact-button">Contact now</button>
                     </section>    
                 </section>
@@ -126,6 +129,28 @@
                     <h4 class="text-feedback">
                         What Our User Say About Us
                     </h4>
+                    <section class="house-fed">
+                        <img class="house-foto" src="./icons/house.png" alt="User"/>
+                        <div class="user-fed">
+                            <p class="comment">
+                                Comment here
+                            </p>
+                            <img class="user-icon" width=80 src="./icons/house2.png" alt="User"/>
+                            <p class="user-name"> Criss </p>
+                            <button class="contact-button">Contact now</button>
+                        </div>
+                    </section>
+                    <section class="house-fed">
+                        <img class="house-foto" src="./icons/house.png" alt="User"/>
+                        <div class="user-fed">
+                            <p class="comment">
+                                Comment here
+                            </p>
+                            <img class="user-icon" width=80 src="./icons/house2.png" alt="User"/>
+                            <p class="user-name"> Criss </p>
+                            <button class="contact-button">Contact now</button>
+                        </div>
+                    </section>
                     <section class="house-fed">
                         <img class="house-foto" src="./icons/house.png" alt="User"/>
                         <div class="user-fed">
